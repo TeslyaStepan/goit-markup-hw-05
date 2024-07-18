@@ -576,18 +576,22 @@ a {
   gap: 16px;
   border-radius: 4px;
   padding: 8px 24px;
-  width: 165px;
+  min-width: 165px;
   height: 40px;
   background-color: #4d5ae5;
   font-weight: 500;
   font-size: 16px;
+  line-height: 1.5;
   letter-spacing: 0.04em;
   text-align: center;
   color: #fff;
+  cursor: pointer;
+  border: none;
 }
 
 .send-icon {
   fill: #fff;
+  margin-left: 16px;
 }
 
 /* modal */
@@ -786,7 +790,7 @@ a {
   margin-bottom: 24px;
 }
 
-input[type="checkbox"]:checked .cancel-icon {
+.checkbox-field input[type="checkbox"]:checked + label span {
   background-color: #404bbf;
   fill: #f4f4fd;
   border: none;

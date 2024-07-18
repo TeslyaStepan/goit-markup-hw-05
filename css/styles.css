@@ -696,6 +696,10 @@ a {
   margin-bottom: 8px;
 }
 
+.modal-textarea {
+  margin-bottom: 16px;
+}
+
 .modal-field-wrap {
   position: relative;
 }

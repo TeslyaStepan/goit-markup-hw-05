@@ -630,8 +630,11 @@ a {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.cancel-icon:focus,
-.cancel-icon:hover {
+.modal-cancel-btn:hover .cancel-icon {
+  fill: #ffffff;
+}
+
+.modal-cancel-btn:focus .cancel-icon {
   fill: #ffffff;
 }
 
@@ -690,7 +693,7 @@ a {
 }
 
 .modal-field {
-  margin-bottom: 8px;
+  margin-bottom: 16px;
 }
 
 .modal-field-wrap {
@@ -751,6 +754,20 @@ a {
   margin-bottom: 4px;
 }
 
+.checkbox-modal {
+  width: 16px;
+  height: 16px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 2px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  fill: transparent;
+}
+
 .checkbox-field {
   display: flex;
   align-items: center;
@@ -758,6 +775,11 @@ a {
   margin-bottom: 24px;
 }
 
+input[type="checkbox"]:checked {
+  background-color: #404bbf;
+  fill: #f4f4fd;
+}
+
 input[type="checkbox"]:checked + label {
-  color: #404bbf;
+  color: #4d5ae5;
 }

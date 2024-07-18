@@ -544,7 +544,7 @@ a {
   margin-left: 80px;
 }
 
-.subscribe-container {
+.subscribe-form {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -616,7 +616,7 @@ a {
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12),
     0 2px 1px 0 rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-  padding: 24px;
+  padding: 72px 24px 24px 24px;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -632,7 +632,7 @@ a {
 
 .cancel-icon:focus,
 .cancel-icon:hover {
-  fill: #fff;
+  fill: #ffffff;
 }
 
 .modal-cancel-btn {
@@ -642,30 +642,34 @@ a {
   border-radius: 50%;
   width: 24px;
   height: 24px;
-  border: 1px rgba(0, 0, 0, 0.1);
-  fill: #e7e9fc;
-  display: block;
-  margin-left: auto;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: #e7e9fc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-cancel-btn:hover,
 .modal-cancel-btn:focus {
   border: none;
-  fill: #404bbf;
+  background-color: #404bbf;
 }
 
 .modal-title {
-  padding-top: 42px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   text-align: center;
   color: #2e2f42;
+  margin-bottom: 16px;
 }
 
 .modal-form {
-  margin-bottom: 16px;
 }
 
 .modal-input {
@@ -676,12 +680,13 @@ a {
   padding-left: 38px;
   padding-right: 24px;
   outline: transparent;
-  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  background-color: transparent;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-input:focus,
 .modal-comment:focus {
-  border: 1px solid #4d5ae5;
+  border-color: #4d5ae5;
 }
 
 .modal-field {
@@ -694,13 +699,13 @@ a {
 
 .modal-icon {
   position: absolute;
-  left: 19px;
+  left: 16px;
   top: 50%;
   transform: translateY(-50%);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-icon:focus {
+.modal-input:focus + .modal-icon {
   fill: #4d5ae5;
 }
 
@@ -720,11 +725,13 @@ a {
   resize: none;
   outline: transparent;
   padding: 8px 16px;
+  color: rgba(46, 47, 66, 0.4);
+  background-color: transparent;
   font-weight: 400;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
-  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .privacy-policy {
@@ -740,6 +747,8 @@ a {
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: #8e8f99;
+  display: block;
+  margin-bottom: 4px;
 }
 
 .checkbox-field {

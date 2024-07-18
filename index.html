@@ -570,12 +570,14 @@ for Your Business-->
         <div class="footer-subscribe">
           <p class="title-soc-media">Subscribe</p>
           <div class="subscribe-container">
-            <input
-              class="footer-email"
-              type="email"
-              name="footer-email"
-              placeholder="E-mail"
-            />
+            <form class="subscribe-form">
+              <input
+                class="footer-email"
+                type="email"
+                name="footer-email"
+                placeholder="E-mail"
+              />
+            </form>
             <button class="send-btn" type="submit">
               <p class="subscribe-text">Subscribe</p>
               <svg class="send-icon" height="24" width="24>
@@ -599,7 +601,7 @@ for Your Business-->
         <p class="modal-title">Leave your contacts and we will call you back</p>
         <form class="modal-form">
           <div class="modal-field">
-            <label for="user-name">Name</label>
+            <label class="label-text" for="user-name">Name</label>
             <div class="modal-field-wrap">
               <input
                 class="modal-input"
@@ -607,11 +609,11 @@ for Your Business-->
                 name="user-name"
                 id="user-name"
               />
-              <svg class="modal-icon">
+              <svg class="modal-icon" 
+                  width="12"
+                  height="12">
                 <use
                   href="./images/icons.svg#icon-user"
-                  width="12"
-                  height="12"
                 ></use>
               </svg>
             </div>
@@ -620,11 +622,11 @@ for Your Business-->
             <label class="label-text" for="number">Phone</label>
             <div class="modal-field-wrap">
               <input class="modal-input" type="tel" name="number" id="number" />
-              <svg class="modal-icon">
+              <svg class="modal-icon" 
+                  width="13"
+                  height="13">
                 <use
                   href="./images/icons.svg#icon-tel"
-                  width="13"
-                  height="13"
                 ></use>
               </svg>
             </div>
@@ -633,17 +635,17 @@ for Your Business-->
             <label class="label-text" for="email">Email</label>
             <div class="modal-field-wrap">
               <input class="modal-input" type="email" name="email" id="email" />
-              <svg class="modal-icon">
+              <svg class="modal-icon" 
+                  width="15"
+                  height="12">
                 <use
                   href="./images/icons.svg#icon-mail"
-                  width="15"
-                  height="12"
                 ></use>
               </svg>
             </div>
           </div>
           <div class="modal-field">
-            <label class="label-text" for="ser-text">Comment</label>
+            <label class="label-text" for="user-text">Comment</label>
             <textarea
               class="modal-comment"
               for="user-text"
@@ -651,7 +653,7 @@ for Your Business-->
               placeholder="Text input"
             ></textarea>
           </div>
-        </form>
+        
         <div class="checkbox-field">
           <input
             type="checkbox"
@@ -660,10 +662,11 @@ for Your Business-->
           />
           <label class="label-text" for="accept-conditions"
             >I accept the terms and conditions of the
-            <a href="" class="privacy-policy">Privacy Policy</a></label
+            <span class="privacy-policy">Privacy Policy</span></label
           >
         </div>
         <button class="order-button" type="submit">Send</button>
+        </form>
       </div>
     </div>
   </body>

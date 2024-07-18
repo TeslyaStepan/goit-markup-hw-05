@@ -693,7 +693,7 @@ a {
 }
 
 .modal-field {
-  margin-bottom: 16px;
+  margin-bottom: 8px;
 }
 
 .modal-field-wrap {
@@ -775,9 +775,10 @@ a {
   margin-bottom: 24px;
 }
 
-input[type="checkbox"]:checked {
+input[type="checkbox"]:checked .cancel-icon {
   background-color: #404bbf;
   fill: #f4f4fd;
+  border: none;
 }
 
 input[type="checkbox"]:checked + label {
